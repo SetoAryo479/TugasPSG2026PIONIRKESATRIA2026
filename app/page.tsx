@@ -1,0 +1,23 @@
+import SiteWithIntro from "../src/modules/Intro/SitewithIntro";
+import Navbar from "../src/components/NavigationBar/Navbar";
+import Section1 from "../src/modules/HalamanSatu/SectionSatu";
+import Section3 from "../src/modules/HalamanTiga/SectionTiga";
+import Section5 from "../src/modules/HalamanLima/SectionLima";
+
+export default function Home() {
+  return (
+    <main id="home" style={{ overflowX: "clip" }}>
+      <Navbar />
+      <SiteWithIntro
+        birdImageSrc="/intro/bird.svg"
+        logoImageSrc="/section2/logo.svg"
+        wayangKananAtasSrc="/section2/gunungan.webp"
+        wayangKiriAtasSrc="/section2/gunungan.webp"
+      >
+        <Section1 />
+        <Section3 />
+        <Section5 />
+      </SiteWithIntro>
+    </main>
+  );
+}
